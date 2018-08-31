@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+      <button ion-button menuToggle> 
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>orgãos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <ion-list>   
+        <ion-item *ngFor="let orgao of orgaos">
+            <ion-avatar item-start>
+                <img src="../../assets/imgs/empresa.png">
+              </ion-avatar>
+              <h4>{{orgao.nome}}</h4>
+              <h3>{{orgao.cidade}}</h3>              
+        </ion-item>
+      </ion-list>
+</ion-content>

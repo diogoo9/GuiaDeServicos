@@ -1,0 +1,29 @@
+<ion-menu [content]="nav">
+    <ion-header>
+        <ion-toolbar color="primary">
+           <ion-title>Menu</ion-title>         
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button ion-item menuClose (click)="openServ()">     
+                <ion-icon name="clipboard"></ion-icon>           
+                serviços
+            </button>
+            <button ion-item menuClose (click)="openOrg()">  
+                <ion-icon name="star"></ion-icon>              
+                orgãos
+            </button>
+            <button ion-item menuClose (click)="openAbou()">  
+                <ion-icon name="alert"></ion-icon>              
+                About
+            </button>
+            <button ion-item (click)="exit()">  
+                <ion-icon name="exit"></ion-icon>              
+                exit
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #nav [root]="rootPage"></ion-nav>

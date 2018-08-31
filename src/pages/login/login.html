@@ -1,0 +1,25 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding class="bk">
+    <ion-list >
+        <br>
+            <img class="imgLogin" src="../../assets/imgs/al.png">
+            <br>
+            <ion-item class="campoLogin">
+                <ion-label floating > E-mail</ion-label>
+                <ion-input type="text" [(ngModel)]="usuario.email"></ion-input>
+            </ion-item>
+            <br>
+            <ion-item class="campoLogin">
+                <ion-label floating> Senha</ion-label>
+                <ion-input type="email" [(ngModel)]="usuario.senha"></ion-input>
+            </ion-item>
+            <br>
+            <p>{{msgAviso}}</p>
+            <button ion-button full (click)="login()">                
+                Login
+            </button>
+    </ion-list>  
+
+</ion-content>
